@@ -14,7 +14,7 @@ public class App {
 
     static class MyHandler implements HttpHandler {
         public void handle(HttpExchange t) throws java.io.IOException {
-            String response = "🚀 Hello Amay from Java Bitbucket CI/CD Pipeline!";
+            String response = "🚀 Hello Amay Jaiswal from Java Bitbucket CI/CD Pipeline!";
             t.sendResponseHeaders(200, response.length());
             OutputStream os = t.getResponseBody();
             os.write(response.getBytes());
