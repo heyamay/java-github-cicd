@@ -16,4 +16,4 @@ WORKDIR /app
 COPY --from=builder /app/out /app
 
 # Run the compiled class
-CMD ["App"]
+ENTRYPOINT ["java", "App"]
